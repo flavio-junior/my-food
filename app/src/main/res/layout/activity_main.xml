@@ -27,10 +27,18 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/add_tab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/red"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="1dp"
+        android:background="@color/white"
+        app:tabMode="auto"
+        app:tabSelectedTextColor="@color/red"
+        app:tabTextColor="@color/gray" />
 
     <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/add_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </LinearLayout>
